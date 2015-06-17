@@ -1,0 +1,6 @@
+body { background: #333; font-size: xx-large; }
+
+#cuerpo:after { content: "Smartphone"; }
+
+h2 span, section h3 { display: none; }
+footer, input { font-size: large; }
