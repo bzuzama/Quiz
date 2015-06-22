@@ -6,3 +6,4 @@ h2 span, section h3 { display: none; }
 footer, input { font-size: large; }
 footer span {margin: 0px 1px; }
 li span { display: none; }
+.rem { display: none; }
