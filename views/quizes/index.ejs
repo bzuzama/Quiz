@@ -7,7 +7,11 @@
 </form>
 <table>
 	<% for (var i=0; i < quizes.length; i++) { %>
-	<tr><td class="rem"><%= quizes[i].id %> - </td><td><a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a></td></tr>
+	<tr>
+		<td class="rem"><%= quizes[i].id %> - </td>
+		<td><a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a></td>
+		<td><a href="quizes/<%= quizes[i].id %>/edit"><button type="button">Editar</button></a></td>
+	</tr>
 	<% } %>
 </table>
 <p><a href="/quizes/new"><button type="button">Cear pregunta</button></a></p>

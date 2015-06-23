@@ -12,3 +12,4 @@ a { color: #00B7FF; }
 ul, table { text-decoration: none; display: inline-block; text-align: left; list-style-type: none; }
 li span { display: inline-block; width: 100px; }
 p {padding: 5px; }
+#ErrorMsgs { color: #f61; font-size: smaller; }
