@@ -1,9 +1,10 @@
 * { margin: 0; padding: 0; }
 body { font: 16px Georgia, serif; }
 
-#cuerpo { margin: 2% auto; color: white; }
+#cuerpo { margin: 2% auto; color: white; width: 95%; }
 #cuerpo > .main { border: 1px solid #999; padding: 1%; margin-bottom: 1px; color: black; }
 
+.main {border-radius: 10px; }
 section > div { padding: 20px; }
 header, nav, section, footer { background: #eee; text-align: center; }
 nav span { margin: 0px 10px 0px 0px; }
@@ -13,3 +14,6 @@ ul, table { text-decoration: none; display: inline-block; text-align: left; list
 li span { display: inline-block; width: 100px; }
 p {padding: 5px; }
 #ErrorMsgs { color: #f61; font-size: smaller; }
+th {padding: 5px; text-align: center; background: #999; border-radius: 7px; }
+td {padding: 5px;}
+#s1 {overflow: hidden; overflow-y: scroll; }

@@ -2,8 +2,11 @@ body { background: #333; font-size: xx-large; }
 
 #cuerpo:after { content: "Smartphone"; }
 
+#cuerpo { width: 100%;}
+
 h2 span, section h3 { display: none; }
 footer, input { font-size: large; }
 footer span {margin: 0px 1px; }
 li span { display: none; }
 .rem { display: none; }
+td {padding: 1px; }
