@@ -6,14 +6,15 @@ body { font: 16px Georgia, serif; }
 
 .main {border-radius: 10px; }
 section > div { padding: 20px; }
-header, nav, section, footer { background: #eee; text-align: center; }
+header, nav, section, footer { background: #EEE; text-align: center; }
 nav span { margin: 0px 10px 0px 0px; }
 footer span { margin: 0px 10px; }
-a { color: #00B7FF; }
+a { color: #0CF; }
 ul, table { text-decoration: none; display: inline-block; text-align: left; list-style-type: none; }
 li span { display: inline-block; width: 100px; }
 p {padding: 5px; }
-#ErrorMsgs { color: #f61; font-size: smaller; }
-th {padding: 5px; text-align: center; background: #999; border-radius: 7px; }
-td {padding: 5px;}
+#ErrorMsgs { color: #F63; font-size: smaller; }
+th { padding: 5px; text-align: center; background: #CCC; border-radius: 7px; }
+td { padding: 5px; }
 #s1 {overflow: hidden; overflow-y: scroll; }
+.form { padding: 2px; margin: 3px; }

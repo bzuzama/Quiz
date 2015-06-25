@@ -1,16 +1,16 @@
-<p>
+<p id="form">
 	<label for="preg" class="rem">Pregunta: </label>
-	<input type="text" id="preg" name="quiz[pregunta]" value="<%= quiz.pregunta %>" placeholder="Pregunta" autofocus><br>
+	<input type="text" class="form" id="preg" name="quiz[pregunta]" value="<%= quiz.pregunta %>" size="31" placeholder="Pregunta" autofocus><br>
 	<label for="resp" class="rem">Respuesta: </label>
-	<input type="text" id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta %>" placeholder="Respuesta"><br>
+	<input type="text" class="form" id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta %>" size="30" placeholder="Respuesta"><br>
 	<label for="tema" class="rem">Tema: </label>
-	<select id="tema" name="quiz[tema]">
+	<select id="tema" class="form" name="quiz[tema]">
 		<option value="otro" <%= quiz.tema === 'otro'?'selected':''%> >Otro</option>
 		<option value="humanidades" <%= quiz.tema === 'humanidades'?'selected':''%>>Humanidades</option>
 		<option value="ocio" <%= quiz.tema === 'ocio'?'selected':''%>>Ocio</option>
 		<option value="ciencia" <%= quiz.tema === 'ciencia'?'selected':''%>>Ciencia</option>
 		<option value="tecnologia" <%= quiz.tema === 'tecnologia'?'selected':''%>>Tecnología</option>
 	</select><br>
-	<a href="/quizes"><button type="button">Cancelar</button></a>
-	<input type="submit" value="Salvar">
+	<a href="/quizes"><button type="button" class="form">Cancelar</button></a>
+	<input type="submit" class="form" value="Salvar">
 </p>
