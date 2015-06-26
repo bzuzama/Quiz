@@ -11,9 +11,13 @@
 		<div id="cuerpo">
 		<header class="main" id="h1">
 			<% if (!session.user) { %>
-				<span class="right"><a href="/login">Login</a></span>
+				<span class="right"><a href="/login"><button>Login</button></a></span>
 			<% } else { %>
-				<span class="right"><%= session.user.username %> <a href="/logout">Logout</a></span>
+				<span class="right">
+					<form method="post" action="/logout?_method=delete">
+						<button type="submit"><%= session.user.username %>: Logout</button>
+					</form>
+				</span>
 			<% } %>
 			<h2>Quiz<span>: el juego de las preguntas</span></h2>
 		</header>
