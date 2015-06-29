@@ -19,3 +19,4 @@ td { padding: 5px; }
 #s1 {overflow: hidden; overflow-y: scroll; }
 .form { padding: 2px; margin: 3px; }
 span.right { float: right; }
+footer .right { font-size: xx-small; }

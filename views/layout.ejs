@@ -41,6 +41,9 @@
 			<a href="http://es.wikipedia.org/wiki/Quiz">¿Que es un Quiz?</a>
 			<span>*</span>
 			<a href="https://github.com/bzuzama/Quiz">Proyecto Quiz en <strong>GitHub</strong></a>
+			<% if (session.user && session.last_op) { %>
+				<span class="right"><%= session.last_op %></span>
+			<% } %>
 		</footer>
 		</div>
 	</body>
