@@ -91,3 +91,27 @@ exports.destroy = function (req, res) {
 		res.redirect('/quizes');
 	}).catch(function (error) {next(error);});
 }
+
+// GET /quizes/statistics
+exports.statistics = function (req, res) {
+	statistics = {n_quizes: 0, n_comments: 0, media: 0, quizes_con: 0, quizes_sin: 0};
+	models.Quiz.findAll({include: [{ model: models.Comment }]}).then(function (quizes) {
+		// Numero de preguntas
+		statistics.n_quizes = quizes.length;
+		for (i in quizes) {
+			if (quizes[i].Comments.length != 0) {
+				// Preguntas con comentarios
+				statistics.quizes_con += 1;
+			};
+		};
+		// Preguntas sin comentarios
+		statistics.quizes_sin = statistics.n_quizes - statistics.quizes_con;
+		models.Comment.findAll().then(function (comments) {
+			// Numero de comentarios
+			statistics.n_comments = comments.length;
+			// Media de comentarios por pregunta con dos decimales
+			statistics.media = (statistics.n_comments / statistics.n_quizes).toFixed(2);
+			res.render('quizes/statistics', {statistics: statistics, errors: []});
+		}).catch(function (error) {next(error);});
+	}).catch(function (error) {next(error);});
+};
